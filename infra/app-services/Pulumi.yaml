@@ -1,0 +1,3 @@
+name: trial-backend-apps-svcs
+description: Deploys trial-backend app required infrastructure
+runtime: nodejs

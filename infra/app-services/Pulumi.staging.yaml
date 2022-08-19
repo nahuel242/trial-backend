@@ -1,0 +1,4 @@
+config:
+  aws:region: us-east-1
+  trial-backend-apps-svcs:clusterStackRef: nahuel242/k8s-aws-cluster/staging
+  trial-backend-apps-svcs:infraStackRef: nahuel242/k8s-aws-infra/staging
