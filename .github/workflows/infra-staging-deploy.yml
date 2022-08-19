@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'infra/app-services/'
+      - 'infra/app-services/**'
 jobs:
   update:
     name: Update
