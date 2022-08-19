@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Code Linter
-      - uses: actions/super-linter@4.9.5
+        uses: actions/super-linter@4.9.5
       
   build:
     runs-on: ubuntu-latest
