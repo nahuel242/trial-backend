@@ -1,4 +1,4 @@
-name: Infrastructure deploy
+name: Staging Infrastructure deploy
 on:
   workflow_dispatch:
   push:

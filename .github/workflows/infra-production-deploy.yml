@@ -1,4 +1,4 @@
-name: Infrastructure deploy
+name: Production Infrastructure deploy
 on:
   workflow_dispatch:
   release:

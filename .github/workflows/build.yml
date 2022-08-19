@@ -13,6 +13,8 @@ on:
       - 'infra/app-services/**'
       - 'infra/helm/**'
       - 'infra/**'
+      - '.github/workflows/**'
+      - '.github/**'
 jobs:
   
   build:
