@@ -16,8 +16,9 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Code Linter
-        uses: github/super-linter@v4
+      # Check linter failures
+      # - name: Code Linter
+      #   uses: github/super-linter@v4
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
