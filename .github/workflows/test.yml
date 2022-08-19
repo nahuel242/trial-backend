@@ -5,6 +5,8 @@ on:
     branches: 
       - main
     paths-ignore:
+      - 'infra/app-services/**'
+      - 'infra/helm/**'
       - 'infra/**'
 
 jobs:
