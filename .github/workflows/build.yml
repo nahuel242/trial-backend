@@ -4,9 +4,11 @@ name: Deploy to ECR
 
 # Controls when the workflow will run
 on:
+  workflow_dispatch:
   # Ignore changes on the infra/ folder to avoid re-building the docker image on infrastructure configuration changes.
   push:
-    branches: [ main ]
+    branches: 
+      - main 
     paths:
       - '**'
       - '!infra/**'
