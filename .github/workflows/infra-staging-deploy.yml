@@ -26,5 +26,6 @@ jobs:
         with:
           command: up
           stack-name: staging
+          work-dir: infra/app-services
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
