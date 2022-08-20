@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trial-backend
+spec:
+  template:
+    spec:
+      containers:
+        - name: trial-backend
+          image: trial-backend
+          env:
+            - name: TYPEORM_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-db-conn-c22a0291
+                  key: host
+            - name: TYPEORM_PORT
+              value: "5432"
+            - name: TYPEORM_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-db-conn-c22a0291
+                  key: username
+            - name: TYPEORM_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-db-conn-c22a0291
+                  key: password
+            - name: TYPEORM_DATABASE
+              value: "backenddb"
+            - name: REDIS_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: redis-cache-conn-74ede027
+                  key: host
+            - name: REDIS_PORT
+              value: "6379"                                                 
+          resources:
+            limits:
+              cpu: 1
+              memory: 512Mi
+            requests:
+              cpu: 50m
+              memory: 32Mi

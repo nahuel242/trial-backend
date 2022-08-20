@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: trial-backend
+spec:
+  rules:
+    - host: a1479bd0a35734cd583606a5ba81823f-2000781475.us-east-1.elb.amazonaws.com 
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: trial-backend
+                port: 
+                  number: 3030
+
+
