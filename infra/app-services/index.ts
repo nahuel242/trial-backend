@@ -68,7 +68,7 @@ const cacheCluster = new aws.elasticache.Cluster("cachecluster", {
 const cacheConn = new k8s.core.v1.ConfigMap("redis-cache-conn",
     {
         data: {
-            host: cacheCluster.cacheNodes[0].address.apply(addr => Buffer.from(addr).toString("base64")),
+            host: cacheCluster.cacheNodes[0].address.apply(addr => Buffer.from(addr).toString()),
         },
         metadata: {
             namespace: config.appsNamespaceName
