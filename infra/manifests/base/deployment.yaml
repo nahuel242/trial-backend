@@ -20,7 +20,7 @@ spec:
       automountServiceAccountToken: true
       containers:
         - name: trial-backend
-          image: trial-backend-image
+          image: trial-backend
           imagePullPolicy: IfNotPresent                                                   
           ports:
             - name: http
