@@ -69,7 +69,7 @@ jobs:
         IMAGE_TAG: ${{ github.sha }}
       run: |
        cd infra/manifests/overlays/staging
-       kustomize edit set image trial-backend="$AWS_ECR_REGISTRY/$AWS_ECR_REPOSITORY:$IMAGE_TAG"
+       kustomize edit set image trial-backend="670927678896.dkr.ecr.us-east-1.amazonaws.com/trial-backend:$IMAGE_TAG"
        cat kustomization.yaml
         
     - name: Commit files
