@@ -9,5 +9,5 @@ resources:
 - ../../base
 images:
 - name: trial-backend
-  newName: /trial-backend
-  newTag: 1447e68bdcd939d9205a283e21a40e9a6e06f0e3
+  newName: '670927678896.dkr.ecr.us-east-1.amazonaws.com/trial-backend:'
+  newTag: a2351463b03cc8dfd91f36868cd6f3af022f2d9c
