@@ -13,6 +13,6 @@ spec:
               service:
                 name: trial-backend
                 port: 
-                  number: 3030
+                  number: 80
 
 
