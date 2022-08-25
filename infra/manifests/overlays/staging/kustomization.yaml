@@ -10,4 +10,4 @@ resources:
 images:
 - name: trial-backend
   newName: 670927678896.dkr.ecr.us-east-1.amazonaws.com/trial-backend
-  newTag: dc51116deee75ec535208cf2875504703dcf6cd8
+  newTag: fd57606f82ffaf443a7988b57ddb2238f57fcff0
