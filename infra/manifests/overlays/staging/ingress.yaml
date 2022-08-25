@@ -4,7 +4,7 @@ metadata:
   name: trial-backend
 spec:
   rules:
-    - host: a1479bd0a35734cd583606a5ba81823f-2000781475.us-east-1.elb.amazonaws.com 
+    - host: stg-api.devopsirl.link
       http:
         paths:
           - path: /
