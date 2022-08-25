@@ -23,7 +23,7 @@ spec:
           image: trial-backend
           imagePullPolicy: IfNotPresent                                                   
           ports:
-            - name: http
+            - name: http-svc
               containerPort: 3030
               protocol: TCP
           # livenessProbe:
