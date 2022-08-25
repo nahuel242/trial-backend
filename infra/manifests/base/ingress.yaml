@@ -12,8 +12,6 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-methods: '*'
     nginx.ingress.kubernetes.io/cors-allow-origin: '*'
     nginx.ingress.kubernetes.io/enable-cors: "true"
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-    nginx.ingress.kubernetes.io/use-regex: "true"
 
 
 
